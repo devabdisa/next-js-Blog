@@ -24,8 +24,8 @@ export default async function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((item) => (
           <>
-            <h1 key={item.title}>{item.title}</h1>
-            <h1 key={item.content}>{item.content}</h1>
+            {/* <h1 key={item.title}>{item.title}</h1>
+            <h1 key={item.content}>{item.content}</h1> */}
           </>
         ))}
       </div>
