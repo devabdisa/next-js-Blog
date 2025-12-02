@@ -10,14 +10,14 @@ export async function handleSubmission(formData: FormData) {
   const user = await getUser();
 
   if (!user) {
-    throw new Error("User not authenticated");
+    return redirect("/api/auth/register");
   }
 
   const title = formData.get("title");
   const content = formData.get("content");
   const url = formData.get("url");
 
-  const data = await prisma.blogPost.create({
+  await prisma.blogPost.create({
     data: {
       title: title as string,
       content: content as string,
