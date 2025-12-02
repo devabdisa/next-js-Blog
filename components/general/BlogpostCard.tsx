@@ -31,7 +31,7 @@ export function BlogpostCard({ data }: IappProps) {
           <h3 className="mb-2 tex-lg font-semibold text-gray-900">
             {data.title}
           </h3>
-          <p className="mb-4 text-sm text-gray-600 line-clamp-3">
+          <p className="mb-4 text-sm text-gray-600 line-clamp-2">
             {data.content}
           </p>
           <div className="flex items-center justify-between">
